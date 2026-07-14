@@ -14,6 +14,9 @@ export default function Projects() {
               <div className="rounded-2xl border border-white/10 bg-slate-900/40 p-6 transition-colors hover:border-cyan-400/40">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <h3 className="text-lg font-semibold text-slate-100">{project.name}</h3>
+                  {project.link && (
+                    <span className="text-xs font-medium text-slate-500">View repository →</span>
+                  )}
                 </div>
                 <div className="mt-2 flex flex-wrap gap-2">
                   {project.stack.map((tech) => (

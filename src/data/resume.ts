@@ -6,9 +6,8 @@ export const profile = {
   location: 'Atlanta, GA',
   email: 'ramisetty.rn@gmail.com',
   phone: '(940) 293-3037',
-  // TODO: replace with your real profile URLs
-  linkedin: '',
-  github: '',
+  linkedin: 'https://www.linkedin.com/in/rupikaaaaa/',
+  github: 'https://github.com/rupikaramisetty',
   summary:
     'Java Backend Engineer with 3+ years of experience building secure, high-throughput distributed systems. Designed OAuth 2.0 and OIDC authorization capabilities aligned to RFC specifications, implemented Kafka-based event flows across distributed services, and led performance engineering that cut response times 25% while sustaining 5000+ TPS. Builds REST APIs and microservices with Spring Boot and Spring Cloud, and works comfortably across Oracle SQL/PL-SQL, Cassandra, and other relational and NoSQL persistence layers.',
 }
@@ -146,8 +145,7 @@ export const projects = [
       'Built backend services and a 4-agent orchestration pipeline with rate limiting, input sanitization, and an access-controlled MCP server interface for external data queries.',
       'Engineered LLM prompt chains and structured output parsing to extract mood and sleep signals from conversational check-ins, generating recommendations from 14-day trend analysis.',
     ],
-    // TODO: add a live demo / repo link if you'd like this card to be clickable
-    link: '',
+    link: 'https://github.com/rupikaramisetty/Daily-Mental-Wellness-Companion',
   },
 ]
 
