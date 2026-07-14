@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Rupika Ramisetty',
-  title: 'Java Backend Engineer',
+  title: 'Software Engineer',
   tagline:
     'Building secure, high-throughput distributed systems — OAuth 2.0/OIDC authorization, Kafka event flows, and Spring-based microservices at scale.',
   location: 'USA',
@@ -9,7 +9,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/rupikaaaaa/',
   github: 'https://github.com/rupikaramisetty',
   summary:
-    'Java Backend Engineer with 3+ years of experience building secure, high-throughput distributed systems. Designed OAuth 2.0 and OIDC authorization capabilities aligned to RFC specifications, implemented Kafka-based event flows across distributed services, and led performance engineering that cut response times 25% while sustaining 5000+ TPS. Builds REST APIs and microservices with Spring Boot and Spring Cloud, and works comfortably across Oracle SQL/PL-SQL, Cassandra, and other relational and NoSQL persistence layers.',
+    'Software Engineer with 3+ years of experience building secure, high-throughput distributed systems. Designed OAuth 2.0 and OIDC authorization capabilities aligned to RFC specifications, implemented Kafka-based event flows across distributed services, and led performance engineering that cut response times 25% while sustaining 5000+ TPS. Builds REST APIs and microservices with Spring Boot and Spring Cloud, and works comfortably across Oracle SQL/PL-SQL, Cassandra, and other relational and NoSQL persistence layers.',
 }
 
 export const skillGroups = [
