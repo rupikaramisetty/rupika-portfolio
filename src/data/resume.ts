@@ -101,7 +101,7 @@ export const skillGroups = [
 
 export const experience = [
   {
-    company: 'TekNexpert',
+    company: 'TeknXpert',
     role: 'Software Engineer',
     period: 'May 2025 – Present',
     bullets: [
