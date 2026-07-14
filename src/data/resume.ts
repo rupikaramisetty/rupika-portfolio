@@ -3,7 +3,7 @@ export const profile = {
   title: 'Java Backend Engineer',
   tagline:
     'Building secure, high-throughput distributed systems — OAuth 2.0/OIDC authorization, Kafka event flows, and Spring-based microservices at scale.',
-  location: 'Atlanta, GA',
+  location: 'USA',
   email: 'ramisetty.rn@gmail.com',
   phone: '(940) 293-3037',
   linkedin: 'https://www.linkedin.com/in/rupikaaaaa/',
