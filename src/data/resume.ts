@@ -2,7 +2,7 @@ export const profile = {
   name: 'Rupika Ramisetty',
   title: 'Software Engineer',
   tagline:
-    'Building secure, high-throughput distributed systems: OAuth 2.0/OIDC authorization, Kafka event flows, and Spring-based microservices at scale.',
+    'Building secure, high-throughput distributed systems with OAuth 2.0/OIDC authorization, Kafka event flows, and Spring-based microservices at scale.',
   location: 'USA',
   email: 'ramisetty.rn@gmail.com',
   phone: '(940) 293-3037',
