@@ -2,14 +2,14 @@ export const profile = {
   name: 'Rupika Ramisetty',
   title: 'Software Engineer',
   tagline:
-    'Building secure, high-throughput distributed systems — OAuth 2.0/OIDC authorization, Kafka event flows, and Spring-based microservices at scale.',
+    'Building secure, high-throughput distributed systems: OAuth 2.0/OIDC authorization, Kafka event flows, and Spring-based microservices at scale.',
   location: 'USA',
   email: 'ramisetty.rn@gmail.com',
   phone: '(940) 293-3037',
   linkedin: 'https://www.linkedin.com/in/rupikaaaaa/',
   github: 'https://github.com/rupikaramisetty',
   summary:
-    'I design and build secure, high-throughput backend systems — from RFC-aligned OAuth 2.0/OIDC authorization services to Kafka-driven event pipelines. My focus is the intersection of security and performance: stateless auth that scales, and systems tuned to hold up under real production load.',
+    'I design and build secure, high-throughput backend systems, from RFC-aligned OAuth 2.0/OIDC authorization services to Kafka-driven event pipelines. My focus is the intersection of security and performance: stateless auth that scales, and systems tuned to hold up under real production load.',
 }
 
 export const stats = [
