@@ -12,11 +12,32 @@ const links = [
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [active, setActive] = useState('')
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    const sections = links
+      .map((link) => document.querySelector(link.href))
+      .filter((el): el is Element => el !== null)
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActive(`#${entry.target.id}`)
+          }
+        }
+      },
+      { rootMargin: '-45% 0px -50% 0px', threshold: 0 },
+    )
+
+    sections.forEach((section) => observer.observe(section))
+    return () => observer.disconnect()
   }, [])
 
   return (
@@ -26,15 +47,25 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a href="#top" className="font-semibold tracking-tight text-slate-100">
-          Rupika Ramisetty
+        <a href="#top" className="font-mono text-sm font-semibold tracking-tight text-slate-100">
+          <span className="text-cyan-400">{'<'}</span>
+          Rupika<span className="text-cyan-400">.</span>dev
+          <span className="text-cyan-400">{' />'}</span>
         </a>
 
         <ul className="hidden gap-8 text-sm text-slate-300 md:flex">
           {links.map((link) => (
             <li key={link.href}>
-              <a href={link.href} className="transition-colors hover:text-cyan-300">
+              <a
+                href={link.href}
+                className={`relative transition-colors hover:text-cyan-300 ${
+                  active === link.href ? 'text-cyan-300' : ''
+                }`}
+              >
                 {link.label}
+                {active === link.href && (
+                  <span className="absolute -bottom-1 left-0 h-px w-full bg-cyan-400" />
+                )}
               </a>
             </li>
           ))}
@@ -64,7 +95,9 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block py-2 transition-colors hover:text-cyan-300"
+                className={`block py-2 transition-colors hover:text-cyan-300 ${
+                  active === link.href ? 'text-cyan-300' : ''
+                }`}
               >
                 {link.label}
               </a>

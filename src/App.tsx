@@ -7,21 +7,25 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Spotlight from './components/Spotlight'
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Education />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="relative min-h-screen bg-slate-950 text-slate-100">
+      <Spotlight />
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Education />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   )
 }
