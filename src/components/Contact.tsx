@@ -11,7 +11,8 @@ export default function Contact() {
           Let's build something reliable together.
         </p>
         <p className="mt-3 text-slate-400">
-          Open to backend engineering, distributed systems, and platform security roles.
+          Open to backend engineering, frontend engineering, distributed systems, and FullStack
+          Engineer roles.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
