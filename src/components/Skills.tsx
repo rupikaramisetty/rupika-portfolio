@@ -2,7 +2,7 @@ import { skillGroups } from '../data/resume'
 
 export default function Skills() {
   return (
-    <section id="skills" className="scroll-mt-20 bg-white/[0.02] px-6 py-20">
+    <section id="skills" className="scroll-mt-20 bg-white/[0.02] px-6 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
         <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
           Skills

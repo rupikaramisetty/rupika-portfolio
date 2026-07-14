@@ -2,7 +2,7 @@ import { profile } from '../data/resume'
 
 export default function Contact() {
   return (
-    <section id="contact" className="scroll-mt-20 px-6 py-24">
+    <section id="contact" className="scroll-mt-20 px-6 py-14 md:py-20">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
           Contact
