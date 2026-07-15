@@ -10,7 +10,7 @@ export default function About() {
           <SectionHeading index="01" title="About" />
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="mt-6 text-lg leading-relaxed text-slate-300">{profile.summary}</p>
+          <p className="mt-6 text-justify text-lg leading-relaxed text-slate-300">{profile.summary}</p>
         </Reveal>
       </div>
     </section>

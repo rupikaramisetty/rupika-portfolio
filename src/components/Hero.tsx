@@ -50,7 +50,7 @@ export default function Hero() {
           </motion.p>
           <motion.p
             variants={item}
-            className="mx-auto mt-6 max-w-xl text-balance text-base leading-relaxed text-slate-400 md:mx-0 md:text-lg"
+            className="mx-auto mt-6 max-w-xl text-justify text-base leading-relaxed text-slate-400 md:mx-0 md:text-lg"
           >
             {profile.tagline}
           </motion.p>
